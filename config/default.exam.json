@@ -11,9 +11,9 @@
     "dialect": "postgres",
     "host": "localhost",
     "port": 5432,
-    "username": "tuanvu",
-    "password": "admin",
-    "database": "crypto",
+    "username": "",
+    "password": "",
+    "database": "",
     "logging": false
   }
 }
