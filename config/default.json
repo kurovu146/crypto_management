@@ -1,0 +1,19 @@
+{
+  "app": {
+    "api": {
+        "port": 8000
+    },
+    "appUrl": [
+        "http://localhost:3000"
+    ]
+  },
+  "database": {
+    "dialect": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "tuanvu",
+    "password": "admin",
+    "database": "crypto",
+    "logging": false
+  }
+}
