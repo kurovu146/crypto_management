@@ -1,7 +1,8 @@
 import { Sequelize } from 'sequelize-typescript';
-import { DATABASE } from 'src/shared/helper/config';
+import { CoinModel } from 'src/models/coin.entity';
+import { TransactionModel } from 'src/models/transaction.entity';
 
-const models = [];
+const models = [CoinModel, TransactionModel];
 
 const databaseProviders = [
   {
@@ -12,9 +13,12 @@ const databaseProviders = [
   },
 ];
 
-const sequelize = new Sequelize({
-  ...DATABASE,
-});
+const sequelize = new Sequelize(
+  'postgres://tuanvu:admin@localhost:5432/crypto',
+  {
+    dialect: 'postgres',
+  },
+);
 
 async function initDatabase() {
   // sequelize model
