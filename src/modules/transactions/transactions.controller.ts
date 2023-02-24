@@ -11,7 +11,7 @@ export class TransactionsController {
     return this.transactionService.getDataTransaction(query);
   }
 
-  @Get('getUSD')
+  @Get('get-usd-amount')
   async getUSDAmount() {
     const transactions = await this.transactionService.findAll();
 
